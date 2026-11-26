@@ -162,34 +162,6 @@ App is live at: http://localhost:5173
   "picture": null,
   "created_at": "2026-01-01T00:00:00Z"
 }
-```
-
----
-
-## 🧪 Testing
-
-### Manual Testing Checklist
-
-| Test | Expected Result |
-|------|----------------|
-| Register with valid data | ✅ Redirect to login with "Account created" message |
-| Register duplicate username | ❌ "That username is already taken" |
-| Register with weak password | ❌ "Password must contain letter and number" |
-| Login with correct credentials | ✅ Redirect to dashboard |
-| Login with wrong password | ❌ "Invalid username/email or password" |
-| Visit /dashboard without login | ✅ Redirect to login |
-| Click Log out | ✅ Back to login, can't access dashboard |
-
-### Automated Backend Tests
-
-```bash
-cd backend
-venv\Scripts\activate
-pip install mongomock pytest
-python -m pytest tests -v
-```
-
----
 
 ## 🔒 Security Summary
 
