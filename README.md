@@ -163,18 +163,3 @@ App is live at: http://localhost:5173
   "created_at": "2026-01-01T00:00:00Z"
 }
 
-## 🔒 Security Summary
-
-- Passwords are hashed with **bcrypt** — the original password is never stored
-- **JWT tokens** expire after 60 minutes (configurable)
-- Google tokens are verified on the **backend only** — the client secret never touches the frontend
-- A CSRF **state token** (cookie + URL) protects the Google OAuth flow
-- Database has **unique indexes** on username, email, google_id
-- **CORS** only allows requests from `FRONTEND_URL`
-
----
-
-## 📂 ZIP File Location
-
-The complete project zip is at:
-`C:\Users\sarve\.gemini\antigravity\scratch\wowelse\wowelse_project.zip`
